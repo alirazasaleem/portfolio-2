@@ -1,0 +1,246 @@
+ @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800');
+ * {
+   font-family: 'Open Sans', sans-serif, serif;
+ }
+ /*  Header */
+ /*  Navbar */
+
+ .navbar-default {
+   border: 0px;
+   background-color: white;
+ }
+
+ .navbar-fixed-top {
+   z-index: 2;
+ }
+ /*  Navbar End */
+
+ header {
+   position: relative;
+   background-attachment: fixed;
+   background-image: url("../image/header.jpg");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 100%;
+ }
+
+ header::after {
+   position: absolute;
+   top: 0;
+   left: 0;
+   background-color: rgba(0, 0, 0, 0.7);
+   width: 100%;
+   height: 100%;
+   content: '';
+ }
+
+ .header-text {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -55%);
+   z-index: 1;
+   margin: 0 auto;
+   width: 90%;
+   color: white;
+   text-align: center;
+ }
+
+ .header-text h1 {
+   font-size: 54px;
+   font-weight: 800;
+   text-transform: uppercase;
+ }
+
+ @media screen and (min-width:800px) {
+   .header-text {
+     width: 70%;
+   }
+ }
+ /*  Header End */
+ /* Services Section */
+
+ section {
+   padding-top: 100px;
+   padding-bottom: 100px;
+ }
+
+ .heading {
+   margin-bottom: 20px;
+   text-align: center;
+   text-transform: uppercase;
+ }
+
+ .heading h1 {
+   font-size: 40px;
+   font-weight: 600;
+ }
+
+ .heading ul {
+   display: inline-block;
+   position: relative;
+   padding-left: 0;
+   list-style: none;
+   text-align: center;
+ }
+
+ .heading ul li:not(:first-of-type) {
+   display: inline-block;
+   border-radius: 50%;
+   width: 12px;
+   height: 12px;
+ }
+
+ .heading ul li:not(:last-of-type) {
+   margin-right: 10px;
+ }
+
+ .heading ul li {
+   position: relative;
+   z-index: 1;
+   border: 2px solid black;
+   background-color: white;
+ }
+
+ .heading ul li:first-of-type {
+   position: absolute;
+   top: calc(50% - 3px);
+   width: 100%;
+   height: 1px;
+ }
+
+ .heading-description {
+   clear: both;
+   margin: 0 auto;
+   width: 90%;
+   text-align: center;
+ }
+
+ .heading-description p {
+   margin-bottom: 50px;
+   font-weight: 300;
+ }
+
+ @media screen and (min-width:500px) {
+   .heading-description {
+     width: 70%;
+   }
+ }
+
+ .services-section * {
+   margin-bottom: 20px;
+   font-weight: 300;
+ }
+
+ .services-section h3 {
+   text-transform: uppercase;
+ }
+ /* Services Section End */
+ /* PortFolio Section */
+
+ .image-gallery>div {
+   padding: 5px;
+ }
+
+ .image-gallery>div img {
+   cursor: pointer;
+ }
+
+ .btn.btn-default.btn-load-more {
+   margin-top: 20px;
+   margin-bottom: 20px;
+   border-radius: 500px;
+ }
+
+ .preview-img {
+   display: none;
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: 3;
+   background-color: rgba(0, 0, 0, 0.5);
+   padding: 3%;
+   width: 100%;
+   height: 100%;
+ }
+
+ .preview-img .closebtn {
+   position: absolute;
+   top: 10px;
+   right: 10px;
+   cursor: pointer;
+   color: white;
+ }
+
+ .preview-img .preview-image {
+   display: block;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -55%);
+   margin: 0 auto;
+   max-width: 90%;
+   height: auto;
+ }
+ /* PortFolio Section End */
+ /* About Section */
+
+ .about-section-text h4 {
+   margin-top: 0px;
+   margin-bottom: 15px;
+   font-size: 24px;
+   font-style: italic;
+   text-transform: capitalize;
+ }
+
+ .about-section-text h5 {
+   margin-top: 15px;
+   margin-bottom: 15px;
+   font-style: italic;
+   text-transform: uppercase;
+ }
+
+ .about-section-text p {
+   font-weight: 300;
+   line-height: 1.75;
+ }
+
+ .about-section-text .social-icon {
+   padding: 0;
+ }
+
+ .about-section-text .social-icon .fa {
+   margin-right: 15px;
+   margin-left: 0px;
+   border-radius: 50%;
+   background-color: #dfe2e3;
+   width: 30px;
+   height: 30px;
+   color: #354952;
+   line-height: 30px;
+   text-align: center;
+ }
+ /* About Section End */
+ /* Contact Section */
+
+ .contact {
+   background-image: url('../image/contact-bg.jpg');
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 100%;
+ }
+
+ .contact * {
+   color: white;
+ }
+
+ .contact div input, .contact div textarea {
+   margin-top: 10px;
+ }
+
+ .contact div input[type="submit"] {
+   color: #333;
+ }
+ /* Contact Section End */
